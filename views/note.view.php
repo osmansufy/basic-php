@@ -8,7 +8,7 @@
             <a href="<?php echo BASE_URI . '/notes'; ?>">Go Back</a>
         </button>
         <p class="mt-4 ">
-            <?php echo $note->body; ?>
+            <?php echo $note['body']  ?>
         </p>
 
     </div>

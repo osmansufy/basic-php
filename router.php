@@ -2,14 +2,7 @@
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 define('BASE_URI', '/php-basic');
-$routes = [
-    BASE_URI . '/' => 'controllers/index.php',
-    BASE_URI . '/about' => 'controllers/about.php',
-    BASE_URI . '/note' => 'controllers/note.php',
-    BASE_URI . '/notes' => 'controllers/notes.php',
-    BASE_URI . '/contact' => 'controllers/contact.php',
 
-];
 
 function routeToController($uri, $routes)
 {
@@ -28,4 +21,5 @@ function abort($code = 404)
     die();
 }
 
+$routes = require 'routes.php';
 routeToController($uri, $routes);
