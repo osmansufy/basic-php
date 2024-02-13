@@ -1,11 +1,11 @@
 <?php
 
 return [
-    BASE_URI . '/' => 'controllers/index.php',
-    BASE_URI . '/about' => 'controllers/about.php',
-    BASE_URI . '/note' => 'controllers/note.php',
-    BASE_URI . '/notes' => 'controllers/notes.php',
-    BASE_URI . '/notes/create' => 'controllers/note-create.php',
-    BASE_URI . '/contact' => 'controllers/contact.php',
+    '/' => 'controllers/index.php',
+    '/about' => 'controllers/about.php',
+    '/note' => 'controllers/notes/show.php',
+    '/notes' => 'controllers/notes/index.php',
+    '/notes/create' => 'controllers/notes/create.php',
+    '/contact' => 'controllers/contact.php',
 
 ];
